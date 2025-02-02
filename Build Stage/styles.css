@@ -1,0 +1,283 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --primary-color: #bb86fc;
+    --secondary-color: #03dac6;
+    --card-bg: #1e1e1e;
+    --progress-bg: #333333;
+    --hover-bg: #2c2c2c;
+    --border-color: #404040;
+    --shadow-color: rgba(0, 0, 0, 0.3);
+    --success-color: #2e7d32;
+    --error-color: #d32f2f;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 30px 0;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+h1:hover {
+    color: var(--primary-color);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 800px;
+    overflow-y: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: fadeIn 0.3s ease-out;
+}
+
+.container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.container.completed {
+    border: 2px solid var(--success-color);
+    box-shadow: 0 0 0 2px var(--success-color);
+}
+
+.add-button {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--text-color);
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add-button:hover {
+    transform: scale(1.1) rotate(90deg);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.add-button .tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.add-button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.subtitle {
+    margin: 0.5rem 0 0;
+    color: #a0a0a0;
+    font-size: 0.9rem;
+}
+
+.build-container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.build-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.build-name {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+}
+
+.build-name:hover {
+    background-color: var(--hover-bg);
+    transform: translateX(4px);
+}
+
+.remove-btn {
+    background: none;
+    border: none;
+    color: var(--error-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 12px;
+    padding: 0;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.remove-btn:hover {
+    color: #b71c1c;
+    transform: scale(1.1);
+}
+
+.stats {
+    margin-top: 1.5rem;
+}
+
+.stats p {
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.progress-container {
+    width: 100%;
+    height: 10px;
+    background-color: var(--progress-bg);
+    border-radius: 5px;
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+select:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+.remaining-time {
+    font-weight: 500;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    background-color: rgba(187, 134, 252, 0.1);
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(187, 134, 252, 0.4);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(187, 134, 252, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(187, 134, 252, 0);
+    }
+}
+
+.progress-percent {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+#stageSearch {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.stageSelect {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.stageSelect:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+} 
