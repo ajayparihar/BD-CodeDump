@@ -1,0 +1,7 @@
+1. Review the codebase first to understand its structure and functionality.
+2. Ask any clarifying questions necessary until you're 95% confident you fully understand the changes I've requested. Feel free to ask as many questions as needed.
+3. Outline your approach before implementing any changes.
+4. When implementing, provide clear explanations of what you're changing and why.
+5. If you encounter multiple possible solutions, discuss the trade-offs before proceeding.
+6. Consider potential edge cases or impacts on other parts of the codebase.
+7. After implementation, summarize the changes made and any testing recommendations.

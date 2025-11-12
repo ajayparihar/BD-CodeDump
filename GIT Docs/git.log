@@ -1,0 +1,80 @@
+# ----------- GLOBAL CONFIGURATION -----------
+# Configure username, email, editor, merge tool, etc.
+git config --global user.name "<Your Name>"              # Sets your global Git username
+git config --global user.email "<Your Email>"            # Sets your global Git email
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe'"  # Set default editor
+git config --global merge.tool "vscode"                  # Setup VSCode as merge tool
+git config --global mergetool.prompt false               # Do not prompt when using merge tool
+
+# ----------- REPOSITORY SETUP -----------
+git init                                                # Initialize a new repo in current directory
+git clone <repo-url>                                    # Clone a remote repository
+git remote -v                                           # List remote URLs linked to this repo
+git remote add origin <repo-url>                        # Add a new remote named origin
+
+# ----------- BRANCHING WORKFLOW -----------
+git branch                                              # List branches
+git branch -a                                           # List all branches (local + remote)
+git branch <branch-name>                                # Create a new branch
+git branch -d <branch-name>                             # Delete a branch (safe: checks merged)
+git checkout <branch-name>                              # Switch to another branch
+git checkout -b <branch-name>                           # Create and switch to new branch
+git branch -m <old> <new>                               # Rename a branch
+
+# ----------- MAIN WORKFLOW: ADD/COMMIT/PUSH -----------
+git status                                              # Show staged, unstaged, and untracked files
+git add <file/dir>                                      # Add file/folder to staging area
+git add .                                               # Add all changes to staging
+git commit -m "<message>"                               # Commit staged changes with message
+git commit --amend -m "<new-message>"                   # Modify previous commit if needed
+git push                                                # Push commits to remote repository
+git push -f                                             # Force push (CAUTION: overwrites history)
+git pull                                                # Fetch and merge remote changes
+git pull --rebase                                       # Pull and rebase for a linear history
+
+# ----------- WORKING CHANGES -----------
+git diff                                                # Show unstaged changes between files and index
+git diff <branch1> <branch2>                            # See difference between branches
+git log                                                 # See commit history
+git log --oneline                                       # Compact commit history view
+git show <commit>                                       # Show objects of a specific commit
+
+# ----------- ADVANCED: REVERT, RESET, REBASE -----------
+git revert <commit>                                     # Make a new commit to undo changes from commit
+git reset --hard HEAD~1                                 # CAUTION: Drop last commit and changes
+git rebase origin/<branch>                              # Move current branch ahead of upstream branch
+git rebase -i HEAD~n                                    # Interactive rebase (edit/squash/fixup last n commits)
+git cherry-pick <commit>                                # Apply a specific commit from another branch
+git stash                                               # Save changes not yet ready to commit
+git stash pop                                           # Reapply stashed changes
+
+# ----------- FILE MANAGEMENT -----------
+git rm <file>                                           # Remove file from working directory and staging area
+git rm -r <dir>                                         # Remove directory
+git checkout -- <file>                                  # Discard local changes to a file
+
+# ----------- TAGGING / RELEASES -----------
+git tag <tagname>                                       # Create tag at current commit
+git tag -a <tagname> -m "<desc>"                        # Annotated tag with description
+git push origin <tagname>                               # Push a tag to remote
+
+# ----------- CLEANUP & MAINTENANCE -----------
+git clean -fd                                           # Remove all untracked files/directories (dangerous)
+git reflog                                              # Show a history of HEAD and branch changes
+
+# ----------- COLLABORATION / BLAME / BISCECT -----------
+git merge <branch>                                      # Merge a branch into active branch
+git blame <file>                                        # See commit/author for each line of a file
+git bisect start                                        # Start binary search for bugs (advanced debugging)
+
+# ----------- COMMON TEMPLATES FROM YOUR SCREENSHOTS -----------
+git commit --amend -m "PBI-445316_442947_New-Calendar_config" # Amend commit with detailed message
+git reset --hard HEAD~1                                      # Drop last commit and changes (CAUTION)
+git revert <commit-hash>                                     # Create revert commit for the hash
+git cherry-pick <commit-hash>                                # Apply changes from specific commit
+git add .                                                    # Stage all changes
+git commit -m "PBI-453874_Portfolio-DEACTIVATE-MYREPO_CCFUND-baseline"
+git push                                                     # Push changes to remote branch
+git pull --rebase                                            # Rebase while pulling for cleaner history
+git rebase origin/<branch>                                   # Move local changes on top of remote branch
+
