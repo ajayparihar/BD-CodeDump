@@ -80,9 +80,142 @@ git bisect start                                        # Start binary search fo
 git commit --amend -m "PBI-445316_442947_New-Calendar_config" # Amend commit with detailed message
 git reset --hard HEAD~1                                      # Drop last commit and changes (CAUTION)
 git revert <commit-hash>                                     # Create revert commit for the hash
-git cherry-pick <commit-hash>                                # Apply changes from specific commit
+git cherry-pick <commit-hash>     
+
+                           # Apply changes from specific commit
 git add .                                                    # Stage all changes
 git commit -m "PBI-453874_Portfolio-DEACTIVATE-MYREPO_CCFUND-baseline"
 git push                                                     # Push changes to remote branch
 git pull --rebase                                            # Rebase while pulling for cleaner history
 git rebase origin/<branch>                                   # Move local changes on top of remote branch
+
+
+
+
+git pull
+
+git checkout PBI-420754_ENV_07_JAN-on-master
+
+git pull --rebase
+git rebase origin/master
+git push -f
+git status
+
+git pull
+
+git checkout Ajay/PBI-448295_Create_generic_purge-1_PS
+
+git pull --rebase
+git rebase origin/main
+git push -f
+git status
+
+git pull
+
+git checkout TEST-DEPLOY_BUILD
+
+git pull --rebase
+git rebase origin/release/release-4.01
+git push -f
+git status
+
+git rebase -i HEAD~5
+
+git commit --amend -m "PBI-445316_442947_New-Calender_config"
+
+
+
+
+git clone https://PAT@dev.azure.com/rabounk-ftbtr/FGBN/_git/rabobank-config
+
+git clone https://PAT@dev.azure.com/rabounk-ftbtr/FGBN/_git/ANow
+
+git clean -fxd
+git checkout cms/config
+git status
+
+git clean -fxd
+git checkout ANow
+git status
+
+C:\Users\SinghA14\repo_anow\ANow
+
+git cherry-pick -n 00e1180d4bc9814b778e41f104bc88235ab6a7700f
+git reset
+git status
+
+git pull
+
+git checkout PBI-453074_Portfolio-DEACTIVATE-MYREPO_CCPUAD-on-release_4.02.0
+
+git pull --rebase
+git rebase origin/release_4.02.0
+git push -f
+git status
+
+git pull
+
+
+
+
+
+git add .
+git status
+git commit -m"PBI-453074_Portfolio-DEACTIVATE-MYREPO_CCPUAD-baseline"
+git push
+git status
+
+git add .
+git status
+git commit -m"PBI-454027_LUT-SEK-1.40_config"
+git push
+git status
+
+git add .
+git status
+git commit -m"5"
+git push
+git status
+
+git add "ITEML" "ITEMG"
+
+git cherry-pick cf918b2320e6cbcf971edca7089618b1ac1d816ed9
+git push -f
+git status
+
+git reset HEAD~1
+git push -f
+git status
+
+
+
+git commit --amend -m "PBI-445316_442947_New-Calender_config"
+git push -f
+git status
+
+**BEWARE**
+git reset --hard HEAD~1
+git push -f
+git status
+
+git revert f8e61fc0527ee00444090e1c31923b94ce87ced3
+git push -f
+git status
+
+git add .
+git status
+git commit -m"PBI-453074_Portfolio-DEACTIVATE-MYREPO_CCPUAD-baseline"
+git push
+git status
+
+git add .
+git status
+git commit -m"PBI-454027_LUT-SEK-1.40_config"
+git push
+git status
+
+git add .
+git status
+git commit -m"5"
+git push
+git status
