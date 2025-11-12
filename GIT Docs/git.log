@@ -77,14 +77,14 @@ git blame <file>                                        # See commit/author for 
 git bisect start                                        # Start binary search for bugs (advanced debugging)
 
 # ----------- COMMON TEMPLATES FROM YOUR SCREENSHOTS -----------
-git commit --amend -m "PBI-445316_442947_New-Calendar_config" # Amend commit with detailed message
+git commit --amend -m "PBI-445316_442947_config" # Amend commit with detailed message
 git reset --hard HEAD~1                                      # Drop last commit and changes (CAUTION)
 git revert <commit-hash>                                     # Create revert commit for the hash
 git cherry-pick <commit-hash>     
 
                            # Apply changes from specific commit
 git add .                                                    # Stage all changes
-git commit -m "PBI-453874_Portfolio-DEACTIVATE-MYREPO_CCFUND-baseline"
+git commit -m "PBI-453874_-baseline"
 git push                                                     # Push changes to remote branch
 git pull --rebase                                            # Rebase while pulling for cleaner history
 git rebase origin/<branch>                                   # Move local changes on top of remote branch
@@ -121,14 +121,14 @@ git status
 
 git rebase -i HEAD~5
 
-git commit --amend -m "PBI-445316_442947_New-Calender_config"
+git commit --amend -m "PBI-445316_config"
 
 
 
 
-git clone https://PAT@dev.azure.com/rabounk-ftbtr/FGBN/_git/rabobank-config
+git clone https://PAT@dev.azure.com/
 
-git clone https://PAT@dev.azure.com/rabounk-ftbtr/FGBN/_git/ANow
+git clone https://PAT@dev.azure.com/
 
 git clean -fxd
 git checkout cms/config
@@ -146,7 +146,7 @@ git status
 
 git pull
 
-git checkout PBI-453074_Portfolio-DEACTIVATE-MYREPO_CCPUAD-on-release_4.02.0
+git checkout PBI-453074_D-on-release_4.02.0
 
 git pull --rebase
 git rebase origin/release_4.02.0
@@ -161,13 +161,13 @@ git pull
 
 git add .
 git status
-git commit -m"PBI-453074_Portfolio-DEACTIVATE-MYREPO_CCPUAD-baseline"
+git commit -m"PBI-453074_-baseline"
 git push
 git status
 
 git add .
 git status
-git commit -m"PBI-454027_LUT-SEK-1.40_config"
+git commit -m"PBI-454027_config"
 git push
 git status
 
@@ -177,7 +177,7 @@ git commit -m"5"
 git push
 git status
 
-git add "ITEML" "ITEMG"
+git add "ITEM1" "ITEM2"
 
 git cherry-pick cf918b2320e6cbcf971edca7089618b1ac1d816ed9
 git push -f
@@ -189,7 +189,7 @@ git status
 
 
 
-git commit --amend -m "PBI-445316_442947_New-Calender_config"
+git commit --amend -m "PBI-445316_442947_config"
 git push -f
 git status
 
@@ -204,13 +204,13 @@ git status
 
 git add .
 git status
-git commit -m"PBI-453074_Portfolio-DEACTIVATE-MYREPO_CCPUAD-baseline"
+git commit -m"PBI-453074_-baseline"
 git push
 git status
 
 git add .
 git status
-git commit -m"PBI-454027_LUT-SEK-1.40_config"
+git commit -m"PBI-_config"
 git push
 git status
 
