@@ -6,6 +6,15 @@ git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe'"  # 
 git config --global merge.tool "vscode"                  # Setup VSCode as merge tool
 git config --global mergetool.prompt false               # Do not prompt when using merge tool
 
+git config --global core.longpaths true
+git config --global user.email "<YOUR EMAIL ID>"
+git config --global user.name "<YOUR NAME>"
+git config --global merge.tool kdiff3
+git config --global mergetool.kdiff3.path "C:/ProgramData/Microsoft/AppV/Client/Integration/7A741846-8F38-4632-B533-4DF483F74685/Root/VFS/ProgramFilesX64/KDiff3/kdiff3.exe"
+git config --global mergetool.kdiff3.trustExitCode false
+git config --global core.editor "C:/PROGRA~2/notepad++/notepad++.exe"
+
+
 # ----------- REPOSITORY SETUP -----------
 git init                                                # Initialize a new repo in current directory
 git clone <repo-url>                                    # Clone a remote repository
@@ -77,4 +86,3 @@ git commit -m "PBI-453874_Portfolio-DEACTIVATE-MYREPO_CCFUND-baseline"
 git push                                                     # Push changes to remote branch
 git pull --rebase                                            # Rebase while pulling for cleaner history
 git rebase origin/<branch>                                   # Move local changes on top of remote branch
-
