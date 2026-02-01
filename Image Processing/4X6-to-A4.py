@@ -132,9 +132,9 @@ def prepare_image(path, want_portrait):
 # build pages
 # =================================================
 
-c.setLineWidth(CUT_LINE)
-
 for page_num, i in enumerate(range(0, total, 3), start=1):
+
+    c.setLineWidth(CUT_LINE)  # <-- moved here to apply to every page
 
     batch = images[i:i+3]
 
