@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitution of India - Sources Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .chart-container {
+            position: relative;
+            height: 60vh;
+            width: 100%;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        /* Table Styles */
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 90%;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        /* Interactive Rows */
+        tr.source-row {
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        tr.source-row:hover {
+            background-color: #e6f7ff;
+        }
+        
+        /* Expandable Details */
+        tr.details-row {
+            background-color: #fafafa;
+            display: none; /* Hidden by default */
+        }
+        tr.details-row.visible {
+            display: table-row;
+        }
+        .details-content {
+            padding: 15px;
+            border-top: none;
+        }
+        .article-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .article-list li {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee;
+        }
+        .article-list li:last-child {
+            border-bottom: none;
+        }
+        .article-badge {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .expand-icon {
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        tr.source-row.expanded .expand-icon {
+            transform: rotate(90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sources of Indian Constitution</h1>
+        <div class="chart-container">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="footer">
+            <h3>Detailed Breakdown</h3>
+            <p style="font-size: 0.9em; color: #888;">Click on a row to view borrowed articles.</p>
+            <div id="stats-table"></div>
+        </div>
+    </div>
+
+    <script>
+        // Data derived from analysis of the CSV file
+        const data = {
+            "UK": 252,
+            "GIA 1935": 196,
+            "USA": 49,
+            "Canada": 45,
+            "Ireland": 37,
+            "India-specific": 36,
+            "UN Charter": 1,
+            "Australia": 1
+        };
+
+        // Sort data by value (descending)
+        const sortedEntries = Object.entries(data).sort((a, b) => b[1] - a[1]);
+        const labels = sortedEntries.map(e => e[0]);
+        const values = sortedEntries.map(e => e[1]);
+        const total = values.reduce((a, b) => a + b, 0);
+
+        // Chart Initialization
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Number of Articles/Features Borrowed',
+                    data: values,
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)',
+                        'rgba(153, 102, 255, 0.7)',
+                        'rgba(255, 159, 64, 0.7)',
+                        'rgba(199, 199, 199, 0.7)',
+                        'rgba(83, 102, 255, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)',
+                        'rgba(199, 199, 199, 1)',
+                        'rgba(83, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'Distribution of Borrowed Features by Source'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                const value = context.parsed.y;
+                                const percentage = ((value / total) * 100).toFixed(1) + '%';
+                                return `${value} features/articles (${percentage})`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: { display: true, text: 'Count' }
+                    },
+                    x: {
+                        title: { display: true, text: 'Source / Nation' }
+                    }
+                }
+            }
+        });
+
+        // Initialize Table and Fetch Details
+        async function initTable() {
+            let sourceDetails = {};
+            try {
+                const response = await fetch('source_details.json');
+                if (response.ok) {
+                    sourceDetails = await response.json();
+                } else {
+                    console.error("Failed to load source_details.json");
+                }
+            } catch (error) {
+                console.error("Error fetching details:", error);
+            }
+
+            const tableContainer = document.getElementById('stats-table');
+            let html = `
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 40%">Source</th>
+                            <th style="width: 30%">Count</th>
+                            <th style="width: 30%">Percentage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+
+            sortedEntries.forEach(([source, count], index) => {
+                const percentage = ((count / total) * 100).toFixed(1);
+                const articles = sourceDetails[source] || [];
+                
+                // Main Row
+                html += `
+                    <tr class="source-row" onclick="toggleDetails(${index})">
+                        <td><span class="expand-icon">▶</span> ${source}</td>
+                        <td>${count}</td>
+                        <td>${percentage}%</td>
+                    </tr>
+                `;
+
+                // Details Row
+                html += `
+                    <tr id="details-${index}" class="details-row">
+                        <td colspan="3">
+                            <div class="details-content">
+                                <h4>Articles Borrowed from ${source} (${articles.length})</h4>
+                                ${articles.length > 0 ? `
+                                    <ul class="article-list">
+                                        ${articles.map(a => `
+                                            <li>
+                                                <span class="article-badge">Art. ${a.article}</span>
+                                                ${a.content}
+                                            </li>
+                                        `).join('')}
+                                    </ul>
+                                ` : '<p>No specific article details available.</p>'}
+                            </div>
+                        </td>
+                    </tr>
+                `;
+            });
+
+            html += `</tbody></table>`;
+            tableContainer.innerHTML = html;
+        }
+
+        // Toggle Function
+        window.toggleDetails = function(index) {
+            const detailsRow = document.getElementById(`details-${index}`);
+            const sourceRow = detailsRow.previousElementSibling;
+            
+            // Toggle visibility class
+            if (detailsRow.classList.contains('visible')) {
+                detailsRow.classList.remove('visible');
+                sourceRow.classList.remove('expanded');
+                sourceRow.querySelector('.expand-icon').textContent = '▶';
+            } else {
+                // Optional: Close others
+                // document.querySelectorAll('.details-row.visible').forEach(row => {
+                //     row.classList.remove('visible');
+                //     row.previousElementSibling.classList.remove('expanded');
+                //     row.previousElementSibling.querySelector('.expand-icon').textContent = '▶';
+                // });
+
+                detailsRow.classList.add('visible');
+                sourceRow.classList.add('expanded');
+                sourceRow.querySelector('.expand-icon').textContent = '▶';
+            }
+        };
+
+        // Run initialization
+        initTable();
+    </script>
+</body>
+</html>

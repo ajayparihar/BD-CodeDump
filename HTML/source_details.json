@@ -1,0 +1,2486 @@
+{
+  "India-specific": [
+    {
+      "article": "1",
+      "content": "Name & territory of India"
+    },
+    {
+      "article": "5",
+      "content": "Citizenship at commencement"
+    },
+    {
+      "article": "6",
+      "content": "Rights of citizenship of certain persons"
+    },
+    {
+      "article": "7",
+      "content": "Rights of citizenship of certain migrants"
+    },
+    {
+      "article": "8",
+      "content": "Rights of citizenship of certain persons of Indian origin"
+    },
+    {
+      "article": "9",
+      "content": "Persons voluntarily acquiring citizenship of other countries"
+    },
+    {
+      "article": "10",
+      "content": "Continuance of rights of citizenship"
+    },
+    {
+      "article": "12",
+      "content": "Definition of State"
+    },
+    {
+      "article": "15",
+      "content": "Prohibition of discrimination on grounds of religion, race, caste, sex, place of birth"
+    },
+    {
+      "article": "17",
+      "content": "Abolition of untouchability"
+    },
+    {
+      "article": "24",
+      "content": "Prohibition of child labor"
+    },
+    {
+      "article": "60",
+      "content": "Oath or affirmation by President"
+    },
+    {
+      "article": "104",
+      "content": "Oath or affirmation by members"
+    },
+    {
+      "article": "159",
+      "content": "Oath or affirmation by Governor"
+    },
+    {
+      "article": "243D",
+      "content": "Reservation of seats in Panchayats"
+    },
+    {
+      "article": "244",
+      "content": "Administration of Scheduled Areas & Tribes"
+    },
+    {
+      "article": "244A",
+      "content": "Formation of an autonomous State within Assam"
+    },
+    {
+      "article": "273",
+      "content": "Grants in lieu of export duties on jute and sugar"
+    },
+    {
+      "article": "276",
+      "content": "Taxes on professions, trades, callings & employments"
+    },
+    {
+      "article": "277",
+      "content": "Taxes on lands & buildings"
+    },
+    {
+      "article": "330",
+      "content": "Reservation of seats for Scheduled Castes & Scheduled Tribes in House of the People"
+    },
+    {
+      "article": "331",
+      "content": "Representation of Anglo-Indians in House of the People"
+    },
+    {
+      "article": "332",
+      "content": "Reservation of seats for SC & ST in Legislative Assemblies of States"
+    },
+    {
+      "article": "333",
+      "content": "Nomination of Anglo-Indians to Legislative Assemblies of States"
+    },
+    {
+      "article": "334",
+      "content": "Duration of reservation of seats & special representation"
+    },
+    {
+      "article": "335",
+      "content": "Claims of Scheduled Castes & Tribes to services & posts"
+    },
+    {
+      "article": "338",
+      "content": "Public Service Commission for Scheduled Castes, Scheduled Tribes & other backward classes"
+    },
+    {
+      "article": "339",
+      "content": "Control of Union over administration of Scheduled Areas & Tribes"
+    },
+    {
+      "article": "340",
+      "content": "Appointment of Commission to investigate backward classes"
+    },
+    {
+      "article": "341",
+      "content": "Scheduled Castes"
+    },
+    {
+      "article": "342",
+      "content": "Scheduled Tribes"
+    },
+    {
+      "article": "347",
+      "content": "Special provision for certain languages"
+    },
+    {
+      "article": "351",
+      "content": "Promotion of Hindi language"
+    },
+    {
+      "article": "370",
+      "content": "Temporary provisions for State of Jammu & Kashmir"
+    },
+    {
+      "article": "371",
+      "content": "Special provisions for States of Maharashtra, Gujarat, Nagaland, Assam, Manipur, Andhra, Sikkim"
+    },
+    {
+      "article": "375",
+      "content": "Special provisions for protection of certain classes"
+    }
+  ],
+  "USA": [
+    {
+      "article": "2",
+      "content": "Admission or establishment of States"
+    },
+    {
+      "article": "13",
+      "content": "Laws inconsistent with Fundamental Rights"
+    },
+    {
+      "article": "14",
+      "content": "Equality before law & equal protection"
+    },
+    {
+      "article": "15",
+      "content": "Prohibition of discrimination on grounds of religion, race, caste, sex, place of birth"
+    },
+    {
+      "article": "16",
+      "content": "Equality of opportunity in matters of public employment"
+    },
+    {
+      "article": "19",
+      "content": "Protection of certain rights regarding freedom of speech, etc."
+    },
+    {
+      "article": "20",
+      "content": "Protection in respect of conviction for offenses"
+    },
+    {
+      "article": "21",
+      "content": "Protection of life & personal liberty"
+    },
+    {
+      "article": "23",
+      "content": "Prohibition of traffic in human beings, forced labor"
+    },
+    {
+      "article": "25",
+      "content": "Freedom of conscience & free profession, practice & propagation of religion"
+    },
+    {
+      "article": "27",
+      "content": "Freedom from taxation for promotion of any particular religion"
+    },
+    {
+      "article": "28",
+      "content": "Freedom from attending religious instruction or worship in certain educational institutions"
+    },
+    {
+      "article": "29",
+      "content": "Protection of interests of minorities"
+    },
+    {
+      "article": "32",
+      "content": "Remedies for enforcement of Fundamental Rights"
+    },
+    {
+      "article": "34",
+      "content": "Restriction on Fundamental Rights during emergency"
+    },
+    {
+      "article": "61",
+      "content": "Procedure for impeachment of President"
+    },
+    {
+      "article": "124",
+      "content": "Establishment & constitution of Supreme Court"
+    },
+    {
+      "article": "131",
+      "content": "Original jurisdiction of Supreme Court"
+    },
+    {
+      "article": "132",
+      "content": "Appellate jurisdiction in civil cases"
+    },
+    {
+      "article": "133",
+      "content": "Appellate jurisdiction in civil cases in High Courts"
+    },
+    {
+      "article": "134",
+      "content": "Appellate jurisdiction in criminal cases"
+    },
+    {
+      "article": "136",
+      "content": "Special leave to appeal by Supreme Court"
+    },
+    {
+      "article": "137",
+      "content": "Review of judgments or orders by Supreme Court"
+    },
+    {
+      "article": "140",
+      "content": "Interim orders by Supreme Court"
+    },
+    {
+      "article": "141",
+      "content": "Law declared by Supreme Court to be binding"
+    },
+    {
+      "article": "142",
+      "content": "Enforcement of decrees & orders of Supreme Court"
+    },
+    {
+      "article": "144",
+      "content": "Enforcement of Fundamental Rights"
+    },
+    {
+      "article": "186",
+      "content": "Jurisdiction of High Courts"
+    },
+    {
+      "article": "195",
+      "content": "Powers of High Court"
+    },
+    {
+      "article": "197",
+      "content": "Application of provisions relating to Fundamental Rights to High Courts"
+    },
+    {
+      "article": "199",
+      "content": "Power of High Court to issue certain writs"
+    },
+    {
+      "article": "222",
+      "content": "Jurisdiction, powers, and authority of High Courts"
+    },
+    {
+      "article": "226",
+      "content": "Power of High Court to issue certain writs"
+    },
+    {
+      "article": "260",
+      "content": "Disputes relating to waters of inter-State rivers"
+    },
+    {
+      "article": "261",
+      "content": "Recognition of laws, public acts, and records"
+    },
+    {
+      "article": "262",
+      "content": "Adjudication of disputes relating to waters of inter-State rivers"
+    },
+    {
+      "article": "265",
+      "content": "Taxes not to be levied except by authority of law"
+    },
+    {
+      "article": "311",
+      "content": "Dismissal, removal, or reduction in rank of persons serving the Union or a State"
+    },
+    {
+      "article": "324",
+      "content": "Superintendence, direction & control of elections"
+    },
+    {
+      "article": "325",
+      "content": "No person to be ineligible on grounds of religion, race, caste, sex"
+    },
+    {
+      "article": "326",
+      "content": "Elections to the House of the People & Legislative Assemblies on basis of adult suffrage"
+    },
+    {
+      "article": "330",
+      "content": "Reservation of seats for Scheduled Castes & Scheduled Tribes in House of the People"
+    },
+    {
+      "article": "332",
+      "content": "Reservation of seats for SC & ST in Legislative Assemblies of States"
+    },
+    {
+      "article": "335",
+      "content": "Claims of Scheduled Castes & Tribes to services & posts"
+    },
+    {
+      "article": "352",
+      "content": "Proclamation of Emergency (national)"
+    },
+    {
+      "article": "353",
+      "content": "Effect of Proclamation of Emergency on executive power"
+    },
+    {
+      "article": "358",
+      "content": "Suspension of Fundamental Rights during national emergency"
+    },
+    {
+      "article": "359",
+      "content": "Suspension of rights to move courts for enforcement of Fundamental Rights"
+    },
+    {
+      "article": "368",
+      "content": "Power of Parliament to amend the Constitution"
+    }
+  ],
+  "GIA 1935": [
+    {
+      "article": "2",
+      "content": "Admission or establishment of States"
+    },
+    {
+      "article": "3",
+      "content": "Formation of new States & alteration of areas"
+    },
+    {
+      "article": "4",
+      "content": "Laws for formation/alteration of States"
+    },
+    {
+      "article": "11",
+      "content": "Parliament to regulate citizenship"
+    },
+    {
+      "article": "33",
+      "content": "Power of Parliament to modify rights in armed forces"
+    },
+    {
+      "article": "52",
+      "content": "President of India"
+    },
+    {
+      "article": "53",
+      "content": "Executive power of the Union"
+    },
+    {
+      "article": "54",
+      "content": "Election of President"
+    },
+    {
+      "article": "55",
+      "content": "Manner of election of President"
+    },
+    {
+      "article": "56",
+      "content": "Term of office of President"
+    },
+    {
+      "article": "58",
+      "content": "Qualifications for election as President"
+    },
+    {
+      "article": "59",
+      "content": "Conditions of President\u2019s office"
+    },
+    {
+      "article": "67",
+      "content": "Salaries of Ministers"
+    },
+    {
+      "article": "71",
+      "content": "Matters relating to election disputes of President"
+    },
+    {
+      "article": "72",
+      "content": "Powers of President to grant pardons, reprieves, etc."
+    },
+    {
+      "article": "73",
+      "content": "Powers of President to remove Governors"
+    },
+    {
+      "article": "76",
+      "content": "Attorney General for India"
+    },
+    {
+      "article": "77",
+      "content": "Conduct of business of Government of India"
+    },
+    {
+      "article": "79",
+      "content": "Constitution of Parliament"
+    },
+    {
+      "article": "80",
+      "content": "Composition of Council of States (Rajya Sabha)"
+    },
+    {
+      "article": "81",
+      "content": "Composition of Lok Sabha"
+    },
+    {
+      "article": "82",
+      "content": "Duration of Lok Sabha"
+    },
+    {
+      "article": "83",
+      "content": "Duration of Rajya Sabha"
+    },
+    {
+      "article": "85",
+      "content": "Disqualifications for membership of Parliament"
+    },
+    {
+      "article": "86",
+      "content": "Sessions of Parliament, prorogation, dissolution"
+    },
+    {
+      "article": "87",
+      "content": "Right of President to address & send messages to Parliament"
+    },
+    {
+      "article": "88",
+      "content": "Special address by President after general elections"
+    },
+    {
+      "article": "90",
+      "content": "Salaries & allowances of Members of Parliament"
+    },
+    {
+      "article": "91",
+      "content": "Allowances of Speakers & Deputy Speakers"
+    },
+    {
+      "article": "92",
+      "content": "Officers of Parliament"
+    },
+    {
+      "article": "96",
+      "content": "Money bills"
+    },
+    {
+      "article": "97",
+      "content": "Annual financial statement (Union Budget)"
+    },
+    {
+      "article": "98",
+      "content": "Supplementary, additional or excess grants"
+    },
+    {
+      "article": "99",
+      "content": "Votes on account, votes of confidence"
+    },
+    {
+      "article": "100",
+      "content": "Rights of Ministers & committees in Parliament"
+    },
+    {
+      "article": "101",
+      "content": "Disqualifications for membership of Parliament"
+    },
+    {
+      "article": "102",
+      "content": "Disqualifications for membership"
+    },
+    {
+      "article": "103",
+      "content": "Decision on questions as to disqualifications"
+    },
+    {
+      "article": "106",
+      "content": "Annual financial statement of Union & Accounts of Parliament"
+    },
+    {
+      "article": "107",
+      "content": "Procedure in Parliament with respect to bills"
+    },
+    {
+      "article": "108",
+      "content": "Joint sitting of both Houses"
+    },
+    {
+      "article": "109",
+      "content": "Special provisions as to Money Bills"
+    },
+    {
+      "article": "111",
+      "content": "Assent to bills by President"
+    },
+    {
+      "article": "112",
+      "content": "Annual financial statement (Union Budget)"
+    },
+    {
+      "article": "113",
+      "content": "Supplementary, additional or excess grants"
+    },
+    {
+      "article": "114",
+      "content": "Votes on account"
+    },
+    {
+      "article": "115",
+      "content": "Appropriation bills"
+    },
+    {
+      "article": "116",
+      "content": "Special provisions as to Bills affecting taxes or financial rights"
+    },
+    {
+      "article": "117",
+      "content": "Procedure in Parliament for Bills affecting States"
+    },
+    {
+      "article": "119",
+      "content": "Reports of Comptroller & Auditor-General"
+    },
+    {
+      "article": "120",
+      "content": "Salaries & allowances of officers of Parliament"
+    },
+    {
+      "article": "121",
+      "content": "Restriction on discussion in Parliament of State matters"
+    },
+    {
+      "article": "123",
+      "content": "Power of President to promulgate Ordinances"
+    },
+    {
+      "article": "125",
+      "content": "Salaries, etc., of Judges of Supreme Court"
+    },
+    {
+      "article": "130",
+      "content": "Seat of Supreme Court"
+    },
+    {
+      "article": "146",
+      "content": "Officers & employees of Supreme Court"
+    },
+    {
+      "article": "147",
+      "content": "Salaries & allowances of officers"
+    },
+    {
+      "article": "148",
+      "content": "Comptroller & Auditor-General of India"
+    },
+    {
+      "article": "149",
+      "content": "Duties of Comptroller & Auditor-General"
+    },
+    {
+      "article": "150",
+      "content": "Reports of Comptroller & Auditor-General"
+    },
+    {
+      "article": "151",
+      "content": "Annual report of Comptroller & Auditor-General to Parliament"
+    },
+    {
+      "article": "152",
+      "content": "Governor of a State"
+    },
+    {
+      "article": "153",
+      "content": "Governors of States"
+    },
+    {
+      "article": "154",
+      "content": "Executive power of State"
+    },
+    {
+      "article": "155",
+      "content": "Appointment of Governor"
+    },
+    {
+      "article": "156",
+      "content": "Term of office of Governor"
+    },
+    {
+      "article": "157",
+      "content": "Qualifications for Governor"
+    },
+    {
+      "article": "158",
+      "content": "Conditions of Governor\u2019s office"
+    },
+    {
+      "article": "160",
+      "content": "Discharge of Governor\u2019s functions in contingencies"
+    },
+    {
+      "article": "161",
+      "content": "Power of Governor to grant pardons, reprieves, etc."
+    },
+    {
+      "article": "162",
+      "content": "Executive power of State"
+    },
+    {
+      "article": "165",
+      "content": "Advocate-General for the State"
+    },
+    {
+      "article": "168",
+      "content": "Constitution of State Legislature"
+    },
+    {
+      "article": "169",
+      "content": "Abolition or creation of Legislative Councils in States"
+    },
+    {
+      "article": "170",
+      "content": "Composition of Legislative Assemblies"
+    },
+    {
+      "article": "171",
+      "content": "Composition of Legislative Councils"
+    },
+    {
+      "article": "172",
+      "content": "Duration of State Legislatures"
+    },
+    {
+      "article": "174",
+      "content": "Officers of State Legislature"
+    },
+    {
+      "article": "176",
+      "content": "Salaries & allowances of Officers of State Legislature"
+    },
+    {
+      "article": "177",
+      "content": "Conduct of business of State Government"
+    },
+    {
+      "article": "180",
+      "content": "Assent to Bills by Governor"
+    },
+    {
+      "article": "181",
+      "content": "Reservation of Bills for consideration of President"
+    },
+    {
+      "article": "182",
+      "content": "Bills reserved for consideration of President"
+    },
+    {
+      "article": "183",
+      "content": "Power of Governor to promulgate Ordinances"
+    },
+    {
+      "article": "184",
+      "content": "High Courts for States"
+    },
+    {
+      "article": "185",
+      "content": "Constitution of High Courts"
+    },
+    {
+      "article": "188",
+      "content": "Appointment of Judges"
+    },
+    {
+      "article": "189",
+      "content": "Salaries & allowances of Judges"
+    },
+    {
+      "article": "191",
+      "content": "Officers of High Courts"
+    },
+    {
+      "article": "194",
+      "content": "Provision as to State Public Service Commissions"
+    },
+    {
+      "article": "196",
+      "content": "Salaries & allowances of Judges"
+    },
+    {
+      "article": "200",
+      "content": "Procedure for bills in State Legislatures"
+    },
+    {
+      "article": "201",
+      "content": "Audit reports of States"
+    },
+    {
+      "article": "202",
+      "content": "Control of appropriations & funds"
+    },
+    {
+      "article": "203",
+      "content": "Recommendations of State Finance Commission"
+    },
+    {
+      "article": "204",
+      "content": "Annual financial statement of State"
+    },
+    {
+      "article": "205",
+      "content": "Supplementary, additional or excess grants"
+    },
+    {
+      "article": "206",
+      "content": "Votes on account, votes of confidence"
+    },
+    {
+      "article": "207",
+      "content": "Procedure in State Legislatures with respect to Bills"
+    },
+    {
+      "article": "209",
+      "content": "Officers of State Legislatures"
+    },
+    {
+      "article": "211",
+      "content": "Salaries & allowances of officers of State Legislatures"
+    },
+    {
+      "article": "212",
+      "content": "Restriction on discussion in State Legislatures"
+    },
+    {
+      "article": "214",
+      "content": "High Courts for States"
+    },
+    {
+      "article": "215",
+      "content": "Constitution of High Courts"
+    },
+    {
+      "article": "216",
+      "content": "Appointment of Judges of High Courts"
+    },
+    {
+      "article": "217",
+      "content": "Conditions of office of Judges"
+    },
+    {
+      "article": "218",
+      "content": "Salaries, etc., of Judges of High Courts"
+    },
+    {
+      "article": "220",
+      "content": "Application of Supreme Court provisions to High Courts"
+    },
+    {
+      "article": "221",
+      "content": "Appointment of officers of High Courts"
+    },
+    {
+      "article": "229",
+      "content": "Salaries, allowances & conditions of service of High Court officers"
+    },
+    {
+      "article": "233",
+      "content": "Appointment of District Judges"
+    },
+    {
+      "article": "235",
+      "content": "Recruitment & conditions of service of officers"
+    },
+    {
+      "article": "236",
+      "content": "Temporary arrangements for certain States"
+    },
+    {
+      "article": "237",
+      "content": "Provision as to services"
+    },
+    {
+      "article": "239",
+      "content": "Administration of Union Territories"
+    },
+    {
+      "article": "240",
+      "content": "Power of President to make regulations for certain Union Territories"
+    },
+    {
+      "article": "243L",
+      "content": "Accounts & audit"
+    },
+    {
+      "article": "243M",
+      "content": "Powers of State Election Commission"
+    },
+    {
+      "article": "243N",
+      "content": "Staff of State Election Commission"
+    },
+    {
+      "article": "245",
+      "content": "Extent of laws made by Parliament & States"
+    },
+    {
+      "article": "246",
+      "content": "Subject-matter of laws made by Parliament & States"
+    },
+    {
+      "article": "247",
+      "content": "Council of Ministers for Union Territories"
+    },
+    {
+      "article": "249",
+      "content": "Power of Parliament to legislate on State List in national interest"
+    },
+    {
+      "article": "250",
+      "content": "Power of Parliament to legislate during proclamation of emergency"
+    },
+    {
+      "article": "251",
+      "content": "Inconsistency of laws with emergency law"
+    },
+    {
+      "article": "252",
+      "content": "Power of Parliament to legislate for two or more States"
+    },
+    {
+      "article": "253",
+      "content": "Legislation to give effect to international agreements"
+    },
+    {
+      "article": "254",
+      "content": "Inconsistency of laws"
+    },
+    {
+      "article": "256",
+      "content": "Obligations of States & Union in respect of law"
+    },
+    {
+      "article": "257",
+      "content": "Control of Union over States in administrative matters"
+    },
+    {
+      "article": "258",
+      "content": "Power of State to entrust Union functions"
+    },
+    {
+      "article": "259",
+      "content": "Power of Parliament to legislate with respect to a State in emergency"
+    },
+    {
+      "article": "263",
+      "content": "Inter-State Council"
+    },
+    {
+      "article": "266",
+      "content": "Consolidated Funds of India & States"
+    },
+    {
+      "article": "267",
+      "content": "Contingency Funds"
+    },
+    {
+      "article": "268",
+      "content": "Duties levied by Union but collected and appropriated by States"
+    },
+    {
+      "article": "269",
+      "content": "Taxes levied & collected by Union but assigned to States"
+    },
+    {
+      "article": "270",
+      "content": "Taxes levied & distributed between Union & States"
+    },
+    {
+      "article": "271",
+      "content": "Surcharge on certain taxes for purposes of Union"
+    },
+    {
+      "article": "272",
+      "content": "Adjustment of certain expenses of States"
+    },
+    {
+      "article": "273",
+      "content": "Grants in lieu of export duties on jute and sugar"
+    },
+    {
+      "article": "274",
+      "content": "Appropriation of revenues of Union & States"
+    },
+    {
+      "article": "275",
+      "content": "Grants from Union to States"
+    },
+    {
+      "article": "278",
+      "content": "Imposition of taxes in certain cases"
+    },
+    {
+      "article": "279",
+      "content": "Recommendations of Finance Commission"
+    },
+    {
+      "article": "280",
+      "content": "Finance Commission"
+    },
+    {
+      "article": "281",
+      "content": "Reports of Finance Commission"
+    },
+    {
+      "article": "282",
+      "content": "Miscellaneous grants by Union or States"
+    },
+    {
+      "article": "283",
+      "content": "Custody, etc. of Consolidated Funds & Contingency Funds"
+    },
+    {
+      "article": "284",
+      "content": "Custody, etc., of Consolidated Funds & Contingency Funds of States"
+    },
+    {
+      "article": "285",
+      "content": "Exemption of property of Union from State taxation"
+    },
+    {
+      "article": "286",
+      "content": "Restrictions on imposition of tax on inter-State trade or commerce"
+    },
+    {
+      "article": "287",
+      "content": "Duties of officers of Union & States"
+    },
+    {
+      "article": "288",
+      "content": "Salaries & allowances of officers of Union & States"
+    },
+    {
+      "article": "289",
+      "content": "Disqualification for election as President"
+    },
+    {
+      "article": "292",
+      "content": "Borrowing by Union"
+    },
+    {
+      "article": "293",
+      "content": "Borrowing by States"
+    },
+    {
+      "article": "294",
+      "content": "Adjustment of certain expenses between Union & States"
+    },
+    {
+      "article": "295",
+      "content": "Exemption from taxation in certain cases"
+    },
+    {
+      "article": "296",
+      "content": "Exemption from taxes on property of States"
+    },
+    {
+      "article": "297",
+      "content": "Matters relating to lands, minerals, forests, etc."
+    },
+    {
+      "article": "298",
+      "content": "Power of State to carry on trade"
+    },
+    {
+      "article": "299",
+      "content": "Contracts, etc., made in the name of Union or State"
+    },
+    {
+      "article": "300",
+      "content": "Succession to property, assets, rights, liabilities of former provinces"
+    },
+    {
+      "article": "302",
+      "content": "Power of Parliament to impose restrictions on trade, commerce, and intercourse"
+    },
+    {
+      "article": "303",
+      "content": "Restrictions on legislative powers of States regarding trade, commerce, and intercourse"
+    },
+    {
+      "article": "304",
+      "content": "Restrictions on trade, commerce, and intercourse within States"
+    },
+    {
+      "article": "305",
+      "content": "Saving of existing laws and laws providing for State monopolies"
+    },
+    {
+      "article": "309",
+      "content": "Recruitment & conditions of service of persons serving the Union or a State"
+    },
+    {
+      "article": "310",
+      "content": "Tenure of office of persons serving the Union or a State"
+    },
+    {
+      "article": "312",
+      "content": "All-India Services"
+    },
+    {
+      "article": "313",
+      "content": "Suspension & dismissal of All-India Services officers"
+    },
+    {
+      "article": "314",
+      "content": "Public Service Commissions for Union & States"
+    },
+    {
+      "article": "315",
+      "content": "Public Service Commissions: composition & appointments"
+    },
+    {
+      "article": "316",
+      "content": "Tenure & conditions of service of Public Service Commissions"
+    },
+    {
+      "article": "318",
+      "content": "Staff of Public Service Commissions"
+    },
+    {
+      "article": "319",
+      "content": "Reports of Public Service Commissions"
+    },
+    {
+      "article": "320",
+      "content": "Functions of Public Service Commissions"
+    },
+    {
+      "article": "321",
+      "content": "Power of Parliament to extend or regulate provisions"
+    },
+    {
+      "article": "322",
+      "content": "Union Territories representation in Parliament"
+    },
+    {
+      "article": "327",
+      "content": "Power of Parliament to make laws for elections"
+    },
+    {
+      "article": "328",
+      "content": "Power of Legislature of a State to make laws for elections"
+    },
+    {
+      "article": "355",
+      "content": "Duty of Union to protect States"
+    },
+    {
+      "article": "356",
+      "content": "Provisions in case of failure of constitutional machinery in States"
+    },
+    {
+      "article": "357",
+      "content": "Exercise of legislative powers under Article 356"
+    },
+    {
+      "article": "361",
+      "content": "Protection of President & Governors in certain cases"
+    },
+    {
+      "article": "362",
+      "content": "Protection of laws & rules from challenge"
+    },
+    {
+      "article": "363",
+      "content": "Validation of certain actions during emergency"
+    },
+    {
+      "article": "366",
+      "content": "Definitions"
+    },
+    {
+      "article": "369",
+      "content": "Saving of laws & Orders during initial years"
+    },
+    {
+      "article": "372",
+      "content": "Continuance of existing laws"
+    },
+    {
+      "article": "374",
+      "content": "Validation of certain orders"
+    },
+    {
+      "article": "392",
+      "content": "Short title, commencement, and extent"
+    },
+    {
+      "article": "393",
+      "content": "Repeals"
+    },
+    {
+      "article": "394",
+      "content": "Repeals"
+    },
+    {
+      "article": "395",
+      "content": "[Original last article] Continuance of existing laws"
+    }
+  ],
+  "UK": [
+    {
+      "article": "3",
+      "content": "Formation of new States & alteration of areas"
+    },
+    {
+      "article": "5",
+      "content": "Citizenship at commencement"
+    },
+    {
+      "article": "6",
+      "content": "Rights of citizenship of certain persons"
+    },
+    {
+      "article": "7",
+      "content": "Rights of citizenship of certain migrants"
+    },
+    {
+      "article": "8",
+      "content": "Rights of citizenship of certain persons of Indian origin"
+    },
+    {
+      "article": "9",
+      "content": "Persons voluntarily acquiring citizenship of other countries"
+    },
+    {
+      "article": "10",
+      "content": "Continuance of rights of citizenship"
+    },
+    {
+      "article": "11",
+      "content": "Parliament to regulate citizenship"
+    },
+    {
+      "article": "12",
+      "content": "Definition of State"
+    },
+    {
+      "article": "13",
+      "content": "Laws inconsistent with Fundamental Rights"
+    },
+    {
+      "article": "16",
+      "content": "Equality of opportunity in matters of public employment"
+    },
+    {
+      "article": "18",
+      "content": "Abolition of titles"
+    },
+    {
+      "article": "19",
+      "content": "Protection of certain rights regarding freedom of speech, etc."
+    },
+    {
+      "article": "20",
+      "content": "Protection in respect of conviction for offenses"
+    },
+    {
+      "article": "21",
+      "content": "Protection of life & personal liberty"
+    },
+    {
+      "article": "22",
+      "content": "Protection against arrest & preventive detention"
+    },
+    {
+      "article": "23",
+      "content": "Prohibition of traffic in human beings, forced labor"
+    },
+    {
+      "article": "24",
+      "content": "Prohibition of child labor"
+    },
+    {
+      "article": "27",
+      "content": "Freedom from taxation for promotion of any particular religion"
+    },
+    {
+      "article": "33",
+      "content": "Power of Parliament to modify rights in armed forces"
+    },
+    {
+      "article": "34",
+      "content": "Restriction on Fundamental Rights during emergency"
+    },
+    {
+      "article": "35",
+      "content": "Legislation to give effect to certain Fundamental Rights"
+    },
+    {
+      "article": "36",
+      "content": "Definition of State"
+    },
+    {
+      "article": "40",
+      "content": "Organisation of Panchayats"
+    },
+    {
+      "article": "50",
+      "content": "Separation of judiciary from executive"
+    },
+    {
+      "article": "52",
+      "content": "President of India"
+    },
+    {
+      "article": "53",
+      "content": "Executive power of the Union"
+    },
+    {
+      "article": "57",
+      "content": "Eligibility for re-election"
+    },
+    {
+      "article": "60",
+      "content": "Oath or affirmation by President"
+    },
+    {
+      "article": "62",
+      "content": "Provisions as to Prime Minister & other Ministers"
+    },
+    {
+      "article": "63",
+      "content": "Council of Ministers to aid & advise President"
+    },
+    {
+      "article": "64",
+      "content": "Other provisions as to Ministers"
+    },
+    {
+      "article": "65",
+      "content": "Duties of Prime Minister in contingencies"
+    },
+    {
+      "article": "68",
+      "content": "Duties of Ministers"
+    },
+    {
+      "article": "71",
+      "content": "Matters relating to election disputes of President"
+    },
+    {
+      "article": "72",
+      "content": "Powers of President to grant pardons, reprieves, etc."
+    },
+    {
+      "article": "74",
+      "content": "Council of Ministers to aid & advise President"
+    },
+    {
+      "article": "75",
+      "content": "Other provisions as to Ministers"
+    },
+    {
+      "article": "76",
+      "content": "Attorney General for India"
+    },
+    {
+      "article": "77",
+      "content": "Conduct of business of Government of India"
+    },
+    {
+      "article": "78",
+      "content": "Duties of Prime Minister as head of Council of Ministers"
+    },
+    {
+      "article": "79",
+      "content": "Constitution of Parliament"
+    },
+    {
+      "article": "80",
+      "content": "Composition of Council of States (Rajya Sabha)"
+    },
+    {
+      "article": "81",
+      "content": "Composition of Lok Sabha"
+    },
+    {
+      "article": "82",
+      "content": "Duration of Lok Sabha"
+    },
+    {
+      "article": "84",
+      "content": "Qualification for membership of Parliament"
+    },
+    {
+      "article": "85",
+      "content": "Disqualifications for membership of Parliament"
+    },
+    {
+      "article": "86",
+      "content": "Sessions of Parliament, prorogation, dissolution"
+    },
+    {
+      "article": "87",
+      "content": "Right of President to address & send messages to Parliament"
+    },
+    {
+      "article": "88",
+      "content": "Special address by President after general elections"
+    },
+    {
+      "article": "89",
+      "content": "Rules of procedure of Parliament"
+    },
+    {
+      "article": "91",
+      "content": "Allowances of Speakers & Deputy Speakers"
+    },
+    {
+      "article": "92",
+      "content": "Officers of Parliament"
+    },
+    {
+      "article": "93",
+      "content": "Secretariat of Parliament"
+    },
+    {
+      "article": "94",
+      "content": "Powers, privileges & immunities of Parliament"
+    },
+    {
+      "article": "95",
+      "content": "Rules for conduct of business in Parliament"
+    },
+    {
+      "article": "96",
+      "content": "Money bills"
+    },
+    {
+      "article": "97",
+      "content": "Annual financial statement (Union Budget)"
+    },
+    {
+      "article": "98",
+      "content": "Supplementary, additional or excess grants"
+    },
+    {
+      "article": "99",
+      "content": "Votes on account, votes of confidence"
+    },
+    {
+      "article": "100",
+      "content": "Rights of Ministers & committees in Parliament"
+    },
+    {
+      "article": "101",
+      "content": "Disqualifications for membership of Parliament"
+    },
+    {
+      "article": "102",
+      "content": "Disqualifications for membership"
+    },
+    {
+      "article": "103",
+      "content": "Decision on questions as to disqualifications"
+    },
+    {
+      "article": "104",
+      "content": "Oath or affirmation by members"
+    },
+    {
+      "article": "105",
+      "content": "Powers, privileges & immunities of Parliament & members"
+    },
+    {
+      "article": "106",
+      "content": "Annual financial statement of Union & Accounts of Parliament"
+    },
+    {
+      "article": "107",
+      "content": "Procedure in Parliament with respect to bills"
+    },
+    {
+      "article": "109",
+      "content": "Special provisions as to Money Bills"
+    },
+    {
+      "article": "110",
+      "content": "Definition of Money Bills"
+    },
+    {
+      "article": "111",
+      "content": "Assent to bills by President"
+    },
+    {
+      "article": "112",
+      "content": "Annual financial statement (Union Budget)"
+    },
+    {
+      "article": "113",
+      "content": "Supplementary, additional or excess grants"
+    },
+    {
+      "article": "114",
+      "content": "Votes on account"
+    },
+    {
+      "article": "115",
+      "content": "Appropriation bills"
+    },
+    {
+      "article": "116",
+      "content": "Special provisions as to Bills affecting taxes or financial rights"
+    },
+    {
+      "article": "118",
+      "content": "Rules of procedure"
+    },
+    {
+      "article": "119",
+      "content": "Reports of Comptroller & Auditor-General"
+    },
+    {
+      "article": "121",
+      "content": "Restriction on discussion in Parliament of State matters"
+    },
+    {
+      "article": "122",
+      "content": "Courts not to inquire into proceedings of Parliament"
+    },
+    {
+      "article": "123",
+      "content": "Power of President to promulgate Ordinances"
+    },
+    {
+      "article": "124",
+      "content": "Establishment & constitution of Supreme Court"
+    },
+    {
+      "article": "126",
+      "content": "Appointment of acting Judges"
+    },
+    {
+      "article": "127",
+      "content": "Appointment of ad hoc Judges"
+    },
+    {
+      "article": "128",
+      "content": "Attendance of retired Judges in Supreme Court"
+    },
+    {
+      "article": "129",
+      "content": "Supreme Court to be a court of record"
+    },
+    {
+      "article": "130",
+      "content": "Seat of Supreme Court"
+    },
+    {
+      "article": "131",
+      "content": "Original jurisdiction of Supreme Court"
+    },
+    {
+      "article": "132",
+      "content": "Appellate jurisdiction in civil cases"
+    },
+    {
+      "article": "133",
+      "content": "Appellate jurisdiction in civil cases in High Courts"
+    },
+    {
+      "article": "134",
+      "content": "Appellate jurisdiction in criminal cases"
+    },
+    {
+      "article": "135",
+      "content": "Appeals from certain tribunals"
+    },
+    {
+      "article": "136",
+      "content": "Special leave to appeal by Supreme Court"
+    },
+    {
+      "article": "137",
+      "content": "Review of judgments or orders by Supreme Court"
+    },
+    {
+      "article": "138",
+      "content": "Enlargement of powers of Supreme Court"
+    },
+    {
+      "article": "140",
+      "content": "Interim orders by Supreme Court"
+    },
+    {
+      "article": "141",
+      "content": "Law declared by Supreme Court to be binding"
+    },
+    {
+      "article": "142",
+      "content": "Enforcement of decrees & orders of Supreme Court"
+    },
+    {
+      "article": "143",
+      "content": "Advisory jurisdiction of President"
+    },
+    {
+      "article": "144",
+      "content": "Enforcement of Fundamental Rights"
+    },
+    {
+      "article": "145",
+      "content": "Rules of Supreme Court"
+    },
+    {
+      "article": "146",
+      "content": "Officers & employees of Supreme Court"
+    },
+    {
+      "article": "148",
+      "content": "Comptroller & Auditor-General of India"
+    },
+    {
+      "article": "149",
+      "content": "Duties of Comptroller & Auditor-General"
+    },
+    {
+      "article": "150",
+      "content": "Reports of Comptroller & Auditor-General"
+    },
+    {
+      "article": "151",
+      "content": "Annual report of Comptroller & Auditor-General to Parliament"
+    },
+    {
+      "article": "152",
+      "content": "Governor of a State"
+    },
+    {
+      "article": "153",
+      "content": "Governors of States"
+    },
+    {
+      "article": "154",
+      "content": "Executive power of State"
+    },
+    {
+      "article": "155",
+      "content": "Appointment of Governor"
+    },
+    {
+      "article": "159",
+      "content": "Oath or affirmation by Governor"
+    },
+    {
+      "article": "161",
+      "content": "Power of Governor to grant pardons, reprieves, etc."
+    },
+    {
+      "article": "162",
+      "content": "Executive power of State"
+    },
+    {
+      "article": "163",
+      "content": "Council of Ministers to aid & advise Governor"
+    },
+    {
+      "article": "164",
+      "content": "Other provisions as to Ministers"
+    },
+    {
+      "article": "165",
+      "content": "Advocate-General for the State"
+    },
+    {
+      "article": "166",
+      "content": "Duties of Ministers with respect to Chief Minister"
+    },
+    {
+      "article": "167",
+      "content": "Duties of Chief Minister in state affairs"
+    },
+    {
+      "article": "168",
+      "content": "Constitution of State Legislature"
+    },
+    {
+      "article": "170",
+      "content": "Composition of Legislative Assemblies"
+    },
+    {
+      "article": "172",
+      "content": "Duration of State Legislatures"
+    },
+    {
+      "article": "173",
+      "content": "Qualification for membership of State Legislature"
+    },
+    {
+      "article": "174",
+      "content": "Officers of State Legislature"
+    },
+    {
+      "article": "175",
+      "content": "Secretariat of State Legislature"
+    },
+    {
+      "article": "177",
+      "content": "Conduct of business of State Government"
+    },
+    {
+      "article": "178",
+      "content": "Leader of House"
+    },
+    {
+      "article": "179",
+      "content": "Rules of procedure"
+    },
+    {
+      "article": "180",
+      "content": "Assent to Bills by Governor"
+    },
+    {
+      "article": "183",
+      "content": "Power of Governor to promulgate Ordinances"
+    },
+    {
+      "article": "184",
+      "content": "High Courts for States"
+    },
+    {
+      "article": "185",
+      "content": "Constitution of High Courts"
+    },
+    {
+      "article": "186",
+      "content": "Jurisdiction of High Courts"
+    },
+    {
+      "article": "187",
+      "content": "Constitution of Principal Seats & Benches"
+    },
+    {
+      "article": "188",
+      "content": "Appointment of Judges"
+    },
+    {
+      "article": "190",
+      "content": "Appointment of acting Judges"
+    },
+    {
+      "article": "191",
+      "content": "Officers of High Courts"
+    },
+    {
+      "article": "192",
+      "content": "Jurisdiction of officers"
+    },
+    {
+      "article": "193",
+      "content": "Control over officers"
+    },
+    {
+      "article": "195",
+      "content": "Powers of High Court"
+    },
+    {
+      "article": "197",
+      "content": "Application of provisions relating to Fundamental Rights to High Courts"
+    },
+    {
+      "article": "198",
+      "content": "Officers and employees of High Courts"
+    },
+    {
+      "article": "199",
+      "content": "Power of High Court to issue certain writs"
+    },
+    {
+      "article": "200",
+      "content": "Procedure for bills in State Legislatures"
+    },
+    {
+      "article": "201",
+      "content": "Audit reports of States"
+    },
+    {
+      "article": "204",
+      "content": "Annual financial statement of State"
+    },
+    {
+      "article": "205",
+      "content": "Supplementary, additional or excess grants"
+    },
+    {
+      "article": "206",
+      "content": "Votes on account, votes of confidence"
+    },
+    {
+      "article": "207",
+      "content": "Procedure in State Legislatures with respect to Bills"
+    },
+    {
+      "article": "208",
+      "content": "Rules of procedure of State Legislatures"
+    },
+    {
+      "article": "209",
+      "content": "Officers of State Legislatures"
+    },
+    {
+      "article": "210",
+      "content": "Secretariat of State Legislatures"
+    },
+    {
+      "article": "212",
+      "content": "Restriction on discussion in State Legislatures"
+    },
+    {
+      "article": "213",
+      "content": "Courts not to inquire into proceedings of State Legislatures"
+    },
+    {
+      "article": "214",
+      "content": "High Courts for States"
+    },
+    {
+      "article": "215",
+      "content": "Constitution of High Courts"
+    },
+    {
+      "article": "216",
+      "content": "Appointment of Judges of High Courts"
+    },
+    {
+      "article": "217",
+      "content": "Conditions of office of Judges"
+    },
+    {
+      "article": "219",
+      "content": "Additional & acting Judges"
+    },
+    {
+      "article": "220",
+      "content": "Application of Supreme Court provisions to High Courts"
+    },
+    {
+      "article": "221",
+      "content": "Appointment of officers of High Courts"
+    },
+    {
+      "article": "222",
+      "content": "Jurisdiction, powers, and authority of High Courts"
+    },
+    {
+      "article": "223",
+      "content": "Jurisdiction of officers"
+    },
+    {
+      "article": "224",
+      "content": "Control of officers"
+    },
+    {
+      "article": "225",
+      "content": "Officers of High Courts"
+    },
+    {
+      "article": "226",
+      "content": "Power of High Court to issue certain writs"
+    },
+    {
+      "article": "227",
+      "content": "Superintendence of High Courts over subordinate courts"
+    },
+    {
+      "article": "228",
+      "content": "Officers & employees of High Courts"
+    },
+    {
+      "article": "230",
+      "content": "Power of High Courts to review certain judgments"
+    },
+    {
+      "article": "233",
+      "content": "Appointment of District Judges"
+    },
+    {
+      "article": "234",
+      "content": "Control over Subordinate Courts"
+    },
+    {
+      "article": "235",
+      "content": "Recruitment & conditions of service of officers"
+    },
+    {
+      "article": "239",
+      "content": "Administration of Union Territories"
+    },
+    {
+      "article": "240",
+      "content": "Power of President to make regulations for certain Union Territories"
+    },
+    {
+      "article": "243",
+      "content": "Organisation of Panchayats"
+    },
+    {
+      "article": "243B",
+      "content": "Constitution of Panchayats"
+    },
+    {
+      "article": "243C",
+      "content": "Composition of Panchayats"
+    },
+    {
+      "article": "243I",
+      "content": "Elections to Panchayats"
+    },
+    {
+      "article": "243K",
+      "content": "Supervision & control of Panchayats"
+    },
+    {
+      "article": "243L",
+      "content": "Accounts & audit"
+    },
+    {
+      "article": "243M",
+      "content": "Powers of State Election Commission"
+    },
+    {
+      "article": "243N",
+      "content": "Staff of State Election Commission"
+    },
+    {
+      "article": "247",
+      "content": "Council of Ministers for Union Territories"
+    },
+    {
+      "article": "250",
+      "content": "Power of Parliament to legislate during proclamation of emergency"
+    },
+    {
+      "article": "253",
+      "content": "Legislation to give effect to international agreements"
+    },
+    {
+      "article": "255",
+      "content": "Rules of procedure of Parliament"
+    },
+    {
+      "article": "261",
+      "content": "Recognition of laws, public acts, and records"
+    },
+    {
+      "article": "264",
+      "content": "Interpretation of laws made under Articles 245\u2013263"
+    },
+    {
+      "article": "265",
+      "content": "Taxes not to be levied except by authority of law"
+    },
+    {
+      "article": "276",
+      "content": "Taxes on professions, trades, callings & employments"
+    },
+    {
+      "article": "277",
+      "content": "Taxes on lands & buildings"
+    },
+    {
+      "article": "289",
+      "content": "Disqualification for election as President"
+    },
+    {
+      "article": "295",
+      "content": "Exemption from taxation in certain cases"
+    },
+    {
+      "article": "296",
+      "content": "Exemption from taxes on property of States"
+    },
+    {
+      "article": "297",
+      "content": "Matters relating to lands, minerals, forests, etc."
+    },
+    {
+      "article": "299",
+      "content": "Contracts, etc., made in the name of Union or State"
+    },
+    {
+      "article": "301",
+      "content": "Freedom of trade, commerce, and intercourse"
+    },
+    {
+      "article": "307",
+      "content": "Appointment of authority for the control of transport"
+    },
+    {
+      "article": "308",
+      "content": "Administrative tribunals"
+    },
+    {
+      "article": "309",
+      "content": "Recruitment & conditions of service of persons serving the Union or a State"
+    },
+    {
+      "article": "310",
+      "content": "Tenure of office of persons serving the Union or a State"
+    },
+    {
+      "article": "311",
+      "content": "Dismissal, removal, or reduction in rank of persons serving the Union or a State"
+    },
+    {
+      "article": "312",
+      "content": "All-India Services"
+    },
+    {
+      "article": "313",
+      "content": "Suspension & dismissal of All-India Services officers"
+    },
+    {
+      "article": "314",
+      "content": "Public Service Commissions for Union & States"
+    },
+    {
+      "article": "315",
+      "content": "Public Service Commissions: composition & appointments"
+    },
+    {
+      "article": "316",
+      "content": "Tenure & conditions of service of Public Service Commissions"
+    },
+    {
+      "article": "317",
+      "content": "Removal & suspension of members of Public Service Commissions"
+    },
+    {
+      "article": "318",
+      "content": "Staff of Public Service Commissions"
+    },
+    {
+      "article": "319",
+      "content": "Reports of Public Service Commissions"
+    },
+    {
+      "article": "320",
+      "content": "Functions of Public Service Commissions"
+    },
+    {
+      "article": "321",
+      "content": "Power of Parliament to extend or regulate provisions"
+    },
+    {
+      "article": "322",
+      "content": "Union Territories representation in Parliament"
+    },
+    {
+      "article": "324",
+      "content": "Superintendence, direction & control of elections"
+    },
+    {
+      "article": "325",
+      "content": "No person to be ineligible on grounds of religion, race, caste, sex"
+    },
+    {
+      "article": "326",
+      "content": "Elections to the House of the People & Legislative Assemblies on basis of adult suffrage"
+    },
+    {
+      "article": "327",
+      "content": "Power of Parliament to make laws for elections"
+    },
+    {
+      "article": "328",
+      "content": "Power of Legislature of a State to make laws for elections"
+    },
+    {
+      "article": "329",
+      "content": "Bar to interference by courts in electoral matters"
+    },
+    {
+      "article": "331",
+      "content": "Representation of Anglo-Indians in House of the People"
+    },
+    {
+      "article": "333",
+      "content": "Nomination of Anglo-Indians to Legislative Assemblies of States"
+    },
+    {
+      "article": "336",
+      "content": "Linguistic minorities"
+    },
+    {
+      "article": "337",
+      "content": "Special responsibilities of Governor regarding education of minorities"
+    },
+    {
+      "article": "338",
+      "content": "Public Service Commission for Scheduled Castes, Scheduled Tribes & other backward classes"
+    },
+    {
+      "article": "343",
+      "content": "Official language of the Union"
+    },
+    {
+      "article": "344",
+      "content": "Commission & Committee for languages"
+    },
+    {
+      "article": "345",
+      "content": "Official language of States"
+    },
+    {
+      "article": "346",
+      "content": "Official language for communication between Union & States"
+    },
+    {
+      "article": "347",
+      "content": "Special provision for certain languages"
+    },
+    {
+      "article": "348",
+      "content": "Language of Supreme Court & High Courts"
+    },
+    {
+      "article": "349",
+      "content": "Special procedure for official language bills"
+    },
+    {
+      "article": "350",
+      "content": "Instruction in mother tongue"
+    },
+    {
+      "article": "352",
+      "content": "Proclamation of Emergency (national)"
+    },
+    {
+      "article": "353",
+      "content": "Effect of Proclamation of Emergency on executive power"
+    },
+    {
+      "article": "354",
+      "content": "Financial emergency provisions"
+    },
+    {
+      "article": "355",
+      "content": "Duty of Union to protect States"
+    },
+    {
+      "article": "356",
+      "content": "Provisions in case of failure of constitutional machinery in States"
+    },
+    {
+      "article": "357",
+      "content": "Exercise of legislative powers under Article 356"
+    },
+    {
+      "article": "358",
+      "content": "Suspension of Fundamental Rights during national emergency"
+    },
+    {
+      "article": "359",
+      "content": "Suspension of rights to move courts for enforcement of Fundamental Rights"
+    },
+    {
+      "article": "360",
+      "content": "Provisions as to financial emergency"
+    },
+    {
+      "article": "361",
+      "content": "Protection of President & Governors in certain cases"
+    },
+    {
+      "article": "362",
+      "content": "Protection of laws & rules from challenge"
+    },
+    {
+      "article": "363",
+      "content": "Validation of certain actions during emergency"
+    },
+    {
+      "article": "364",
+      "content": "Finance & emergency provisions"
+    },
+    {
+      "article": "365",
+      "content": "Powers of Union in financial emergency"
+    },
+    {
+      "article": "366",
+      "content": "Definitions"
+    },
+    {
+      "article": "367",
+      "content": "Interpretation"
+    },
+    {
+      "article": "368",
+      "content": "Power of Parliament to amend the Constitution"
+    },
+    {
+      "article": "377",
+      "content": "[Original provision] Punishment for unnatural offences"
+    },
+    {
+      "article": "392",
+      "content": "Short title, commencement, and extent"
+    },
+    {
+      "article": "393",
+      "content": "Repeals"
+    },
+    {
+      "article": "394",
+      "content": "Repeals"
+    }
+  ],
+  "Ireland": [
+    {
+      "article": "18",
+      "content": "Abolition of titles"
+    },
+    {
+      "article": "22",
+      "content": "Protection against arrest & preventive detention"
+    },
+    {
+      "article": "25",
+      "content": "Freedom of conscience & free profession, practice & propagation of religion"
+    },
+    {
+      "article": "26",
+      "content": "Freedom to manage religious affairs"
+    },
+    {
+      "article": "28",
+      "content": "Freedom from attending religious instruction or worship in certain educational institutions"
+    },
+    {
+      "article": "29",
+      "content": "Protection of interests of minorities"
+    },
+    {
+      "article": "30",
+      "content": "Right of minorities to establish & administer educational institutions"
+    },
+    {
+      "article": "32",
+      "content": "Remedies for enforcement of Fundamental Rights"
+    },
+    {
+      "article": "35",
+      "content": "Legislation to give effect to certain Fundamental Rights"
+    },
+    {
+      "article": "37",
+      "content": "Directive Principles of State Policy (DPSP)"
+    },
+    {
+      "article": "38",
+      "content": "Certain DPSPs: social welfare, equitable distribution"
+    },
+    {
+      "article": "39",
+      "content": "Certain DPSPs: policies of economic justice"
+    },
+    {
+      "article": "40",
+      "content": "Organisation of Panchayats"
+    },
+    {
+      "article": "41",
+      "content": "Right to work, education, public assistance"
+    },
+    {
+      "article": "42",
+      "content": "Living wage & social security"
+    },
+    {
+      "article": "43",
+      "content": "Participation of workers in management"
+    },
+    {
+      "article": "44",
+      "content": "Uniform civil code"
+    },
+    {
+      "article": "45",
+      "content": "Provision for free & compulsory education for children"
+    },
+    {
+      "article": "46",
+      "content": "Promotion of educational & economic interests of weaker sections"
+    },
+    {
+      "article": "47",
+      "content": "Duty of the State to raise nutrition & standard of living"
+    },
+    {
+      "article": "48",
+      "content": "Organisation of agriculture & animal husbandry"
+    },
+    {
+      "article": "49",
+      "content": "Protection of monuments & places of national importance"
+    },
+    {
+      "article": "50",
+      "content": "Separation of judiciary from executive"
+    },
+    {
+      "article": "51",
+      "content": "Promotion of international peace & security"
+    },
+    {
+      "article": "243",
+      "content": "Organisation of Panchayats"
+    },
+    {
+      "article": "243B",
+      "content": "Constitution of Panchayats"
+    },
+    {
+      "article": "243C",
+      "content": "Composition of Panchayats"
+    },
+    {
+      "article": "243E",
+      "content": "Duration of Panchayats"
+    },
+    {
+      "article": "243F",
+      "content": "Constitution of Committees"
+    },
+    {
+      "article": "243G",
+      "content": "Powers & responsibilities of Panchayats"
+    },
+    {
+      "article": "243H",
+      "content": "Powers to impose taxes"
+    },
+    {
+      "article": "243I",
+      "content": "Elections to Panchayats"
+    },
+    {
+      "article": "243J",
+      "content": "Schedule for Panchayat elections"
+    },
+    {
+      "article": "243K",
+      "content": "Supervision & control of Panchayats"
+    },
+    {
+      "article": "337",
+      "content": "Special responsibilities of Governor regarding education of minorities"
+    },
+    {
+      "article": "350",
+      "content": "Instruction in mother tongue"
+    },
+    {
+      "article": "368",
+      "content": "Power of Parliament to amend the Constitution"
+    }
+  ],
+  "UN Charter": [
+    {
+      "article": "51",
+      "content": "Promotion of international peace & security"
+    }
+  ],
+  "Canada": [
+    {
+      "article": "54",
+      "content": "Election of President"
+    },
+    {
+      "article": "55",
+      "content": "Manner of election of President"
+    },
+    {
+      "article": "83",
+      "content": "Duration of Rajya Sabha"
+    },
+    {
+      "article": "99",
+      "content": "Votes on account, votes of confidence"
+    },
+    {
+      "article": "108",
+      "content": "Joint sitting of both Houses"
+    },
+    {
+      "article": "114",
+      "content": "Votes on account"
+    },
+    {
+      "article": "117",
+      "content": "Procedure in Parliament for Bills affecting States"
+    },
+    {
+      "article": "135",
+      "content": "Appeals from certain tribunals"
+    },
+    {
+      "article": "143",
+      "content": "Advisory jurisdiction of President"
+    },
+    {
+      "article": "169",
+      "content": "Abolition or creation of Legislative Councils in States"
+    },
+    {
+      "article": "203",
+      "content": "Recommendations of State Finance Commission"
+    },
+    {
+      "article": "206",
+      "content": "Votes on account, votes of confidence"
+    },
+    {
+      "article": "245",
+      "content": "Extent of laws made by Parliament & States"
+    },
+    {
+      "article": "246",
+      "content": "Subject-matter of laws made by Parliament & States"
+    },
+    {
+      "article": "248",
+      "content": "Residuary powers of Parliament"
+    },
+    {
+      "article": "249",
+      "content": "Power of Parliament to legislate on State List in national interest"
+    },
+    {
+      "article": "251",
+      "content": "Inconsistency of laws with emergency law"
+    },
+    {
+      "article": "252",
+      "content": "Power of Parliament to legislate for two or more States"
+    },
+    {
+      "article": "254",
+      "content": "Inconsistency of laws"
+    },
+    {
+      "article": "260",
+      "content": "Disputes relating to waters of inter-State rivers"
+    },
+    {
+      "article": "262",
+      "content": "Adjudication of disputes relating to waters of inter-State rivers"
+    },
+    {
+      "article": "263",
+      "content": "Inter-State Council"
+    },
+    {
+      "article": "264",
+      "content": "Interpretation of laws made under Articles 245\u2013263"
+    },
+    {
+      "article": "269",
+      "content": "Taxes levied & collected by Union but assigned to States"
+    },
+    {
+      "article": "270",
+      "content": "Taxes levied & distributed between Union & States"
+    },
+    {
+      "article": "279",
+      "content": "Recommendations of Finance Commission"
+    },
+    {
+      "article": "280",
+      "content": "Finance Commission"
+    },
+    {
+      "article": "298",
+      "content": "Power of State to carry on trade"
+    },
+    {
+      "article": "301",
+      "content": "Freedom of trade, commerce, and intercourse"
+    },
+    {
+      "article": "302",
+      "content": "Power of Parliament to impose restrictions on trade, commerce, and intercourse"
+    },
+    {
+      "article": "303",
+      "content": "Restrictions on legislative powers of States regarding trade, commerce, and intercourse"
+    },
+    {
+      "article": "304",
+      "content": "Restrictions on trade, commerce, and intercourse within States"
+    },
+    {
+      "article": "305",
+      "content": "Saving of existing laws and laws providing for State monopolies"
+    },
+    {
+      "article": "307",
+      "content": "Appointment of authority for the control of transport"
+    },
+    {
+      "article": "336",
+      "content": "Linguistic minorities"
+    },
+    {
+      "article": "343",
+      "content": "Official language of the Union"
+    },
+    {
+      "article": "344",
+      "content": "Commission & Committee for languages"
+    },
+    {
+      "article": "345",
+      "content": "Official language of States"
+    },
+    {
+      "article": "346",
+      "content": "Official language for communication between Union & States"
+    },
+    {
+      "article": "348",
+      "content": "Language of Supreme Court & High Courts"
+    },
+    {
+      "article": "349",
+      "content": "Special procedure for official language bills"
+    },
+    {
+      "article": "354",
+      "content": "Financial emergency provisions"
+    },
+    {
+      "article": "360",
+      "content": "Provisions as to financial emergency"
+    },
+    {
+      "article": "364",
+      "content": "Finance & emergency provisions"
+    },
+    {
+      "article": "365",
+      "content": "Powers of Union in financial emergency"
+    }
+  ],
+  "Australia": [
+    {
+      "article": "286",
+      "content": "Restrictions on imposition of tax on inter-State trade or commerce"
+    }
+  ]
+}
