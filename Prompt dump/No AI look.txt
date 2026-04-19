@@ -1,0 +1,27 @@
+## 01 — Strip the Visual Noise
+
+Remove every gradient, glassmorphism effect, frosted panel, and purple-to-blue (or any multi-color) background from the entire landing page. Replace everything with a single flat background color and one accent color used consistently for buttons, links, and highlights only. No shadows that look decorative. No borders that glow. If an element needs depth, use spacing — not effects.
+
+---
+
+## 02 — Rewrite the Copy Like a Human Wrote It
+
+Go through every headline, subheading, button label, and body paragraph on the page. Cut any word that sounds like a press release: no "empower," "unleash," "revolutionize," "supercharge," "seamlessly," "next-level," "game-changing," or "cutting-edge." Remove all emojis. Rewrite everything the way a person would explain this product to a friend over coffee — specific, direct, and honest. If a sentence doesn't tell the reader something real, delete it entirely.
+
+---
+
+## 03 — Replace the Three-Card Feature Section With Proof
+
+Delete the three-feature-cards-in-a-row layout and the generic icons inside it. Replace that section with something that shows the product actually exists and works. Use one of the following:
+
+- A real, unedited product screenshot with a one-line caption explaining what they're looking at
+- A short looping demo clip (no music, no transitions, just the product being used)
+- A single concrete result stated plainly — a number, a time saved, a before/after — with the context that makes it believable
+
+No stock illustrations. No placeholder icons. No "coming soon" stand-ins.
+
+---
+
+## 04 — Set One Real Font, Fix the Spacing System
+
+Choose one real, readable font — not the browser default and not a decorative display face. Apply it consistently across the entire page. Set body text line-height to 1.55 and a comfortable reading width (60–70 characters max per line). Then audit every section's top and bottom padding and make them consistent — pick one spacing unit and stick to it. Remove any section that feels cramped, any padding that's uneven between desktop and mobile, and any heading that's either too large or too small relative to the body text sitting beneath it.

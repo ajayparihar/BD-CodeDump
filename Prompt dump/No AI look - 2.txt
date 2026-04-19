@@ -1,0 +1,31 @@
+1) **Strip the “trendy” visual effects; make it clean + flat**
+- Remove **all gradients**, **glassmorphism/frosted blur**, glows, neon, and any **purple→blue** (or similar) background treatments.
+- Replace the entire page background with **one solid neutral color** (e.g., off‑white, near‑black, or warm gray).
+- Use **one single accent color** only (for primary CTA, links, key highlights). No extra secondary accent palettes.
+- Ensure contrast is accessible (text and buttons must be clearly readable).
+
+2) **Rewrite every line of landing-page copy in natural, specific English**
+- Rewrite headings, subheads, button labels, captions, feature text, FAQs—**everything**.
+- Tone: **plain, human, direct**. Write like you’re explaining the product to a friend.
+- Avoid hype words and clichés: **no** “empower,” “unleash,” “revolutionize,” “supercharge,” “next‑gen,” “game‑changer,” etc. **No emojis.**
+- Make copy **concrete and scannable**: what it is, who it’s for, how it works, what you get, what it costs/what happens next.
+
+3) **Replace the “three feature cards” with proof the product exists**
+- Remove the generic **three-cards-in-a-row** feature block and any placeholder icons.
+- Replace with **one** of the following “proof” modules (preferably above the fold or immediately after):
+  - A **real product screenshot** inside a simple device/browser frame, with a short caption explaining what we’re seeing, **or**
+  - A **short embedded demo clip** (5–20 seconds) showing a real workflow, **or**
+  - A **concrete result metric** with context (e.g., “Reduced onboarding time from X to Y” + who/when), not vague claims.
+- The module should answer: “What does it actually look like?” or “What real outcome does it produce?”
+
+4) **Upgrade typography + spacing for a polished, consistent rhythm**
+- Choose **one high-quality, real font family** (not default). Use it consistently (with weight variations, not multiple fonts).
+- Set body typography to readable standards:
+  - Body line-height: **1.5–1.6**
+  - Avoid tiny type; keep consistent sizing across sections
+- Fix layout spacing:
+  - Apply a consistent spacing system (e.g., 8px/12px base) so vertical padding/margins are uniform.
+  - Remove cramped sections, uneven padding, misaligned baselines, and inconsistent gaps.
+  - Ensure headings, paragraphs, buttons, and sections align to a clear, repeatable vertical rhythm.
+
+If you tell me your product name + target user + primary CTA (e.g., “Book a demo” vs “Start free”), I can rewrite point #2 with copy that matches your exact offering.
