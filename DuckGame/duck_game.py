@@ -1,5 +1,5 @@
 """
-Duck & Dodge
+Duck Bitch
 ============
 A webcam-controlled dodge game using MediaPipe pose detection.
 Spikes hang from the top and scroll left — duck to survive!
@@ -21,6 +21,7 @@ import time
 import math
 import random
 import logging
+import threading
 from collections import deque
 from dataclasses import dataclass, field
 from typing import List, Tuple, Optional
@@ -54,11 +55,11 @@ class GameConfig:
     # === WINDOW / RESOLUTION ===
     WINDOW_WIDTH: int = 1920
     WINDOW_HEIGHT: int = 1080
-    WINDOW_TITLE: str = "Duck & Dodge"
+    WINDOW_TITLE: str = "Duck Bitch"
 
     # === CAMERA PROCESSING (lower = faster FPS) ===
-    PROCESS_WIDTH: int = 640
-    PROCESS_HEIGHT: int = 480
+    PROCESS_WIDTH: int = 320
+    PROCESS_HEIGHT: int = 240
 
     # === SPIKE GEOMETRY ===
     SPIKE_WIDTH: int = 70               # base width of each spike triangle
@@ -269,6 +270,8 @@ class DuckGame:
         self.head_y = 0.5
         self.has_pose = False
 
+        self._thread_running = False
+
         # Menu state
         self.menu_options = ["START GAME", "QUIT"]
         self.menu_sel = 0
@@ -291,15 +294,15 @@ class DuckGame:
         cfg = self.cfg
         cv2.namedWindow(cfg.WINDOW_TITLE, cv2.WINDOW_NORMAL)
         cv2.resizeWindow(cfg.WINDOW_TITLE, cfg.WINDOW_WIDTH, cfg.WINDOW_HEIGHT)
-        logger.info("Duck & Dodge — press 'q' to quit")
+        logger.info("Duck Bitch — press 'q' to quit")
+
+        self._thread_running = True
+        cam_thread = threading.Thread(target=self._camera_thread, daemon=True)
+        cam_thread.start()
 
         try:
-            while self._cam.is_opened and self.running:
-                ok, frame = self._cam.read()
-                if not ok:
-                    break
-
-                self._detect(frame)
+            while self.running:
+                loop_start = time.time()
 
                 now = time.time()
                 dt = now - self._t
@@ -325,45 +328,55 @@ class DuckGame:
 
                 cv2.imshow(cfg.WINDOW_TITLE, c)
 
-                key = cv2.waitKeyEx(1)
+                elapsed = time.time() - loop_start
+                delay = max(1, int((1.0 / 60.0 - elapsed) * 1000))
+                key = cv2.waitKeyEx(delay)
                 if key != -1:
                     self._handle_input(key)
         finally:
+            self._thread_running = False
+            cam_thread.join(timeout=1.0)
             self._cam.release()
             cv2.destroyAllWindows()
 
     # ------------------------------------------------------------------
-    # POSE DETECTION
+    # POSE DETECTION THREAD
     # ------------------------------------------------------------------
 
-    def _detect(self, frame):
-        try:
-            small = cv2.resize(
-                frame, (self.cfg.PROCESS_WIDTH, self.cfg.PROCESS_HEIGHT),
-                interpolation=cv2.INTER_NEAREST,
-            )
-            rgb = cv2.cvtColor(small, cv2.COLOR_BGR2RGB)
-            img = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
-            ts = int(time.time() * 1000)
-            res = self._lm.detect_for_video(img, ts)
+    def _camera_thread(self):
+        while self._thread_running and self._cam.is_opened:
+            ok, frame = self._cam.read()
+            if not ok:
+                break
 
-            if res and res.pose_landmarks:
-                raw = res.pose_landmarks[0]
-                sm = self._sm.smooth(raw)
-                self._landmarks = sm
-                nose = sm[Landmarks.NOSE]
-                if nose.visibility > 0.5:
-                    self.head_x = 1.0 - nose.x  # mirror
-                    self.head_y = nose.y
-                    self.has_pose = True
-                    return
-            self.has_pose = False
-            self._landmarks = None
-            self._sm.reset()
-        except Exception:
-            logger.exception("Detection error")
-            self.has_pose = False
-            self._landmarks = None
+            try:
+                small = cv2.resize(
+                    frame, (self.cfg.PROCESS_WIDTH, self.cfg.PROCESS_HEIGHT),
+                    interpolation=cv2.INTER_NEAREST,
+                )
+                rgb = cv2.cvtColor(small, cv2.COLOR_BGR2RGB)
+                img = mp.Image(image_format=mp.ImageFormat.SRGB, data=rgb)
+                ts = int(time.time() * 1000)
+                res = self._lm.detect_for_video(img, ts)
+
+                if res and res.pose_landmarks:
+                    raw = res.pose_landmarks[0]
+                    sm = self._sm.smooth(raw)
+                    self._landmarks = sm
+                    nose = sm[Landmarks.NOSE]
+                    if nose.visibility > 0.5:
+                        self.head_x = 1.0 - nose.x  # mirror
+                        self.head_y = nose.y
+                        self.has_pose = True
+                        continue
+                
+                self.has_pose = False
+                self._landmarks = None
+                self._sm.reset()
+            except Exception:
+                logger.exception("Detection error")
+                self.has_pose = False
+                self._landmarks = None
 
     # ------------------------------------------------------------------
     # HEAD PIXEL
@@ -537,7 +550,7 @@ class DuckGame:
             self._draw_head(canvas, hx, hy, cfg.HEAD_NORMAL)
 
         # Title
-        _ctext(canvas, "DUCK & DODGE", cx, cy - 180, 2.5, (255, 255, 255), 5)
+        _ctext(canvas, "DUCK BITCH", cx, cy - 180, 2.5, (255, 255, 255), 5)
         _ctext(canvas, "Duck under the spikes to survive!", cx, cy - 100, 0.8, (180, 180, 180), 2)
 
         # Pose status
