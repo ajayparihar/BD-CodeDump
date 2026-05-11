@@ -233,6 +233,8 @@ class State:
     MENU = 0
     PLAYING = 1
     GAME_OVER = 2
+    PAUSED = 3
+
 
 
 # =============================================================================
@@ -267,12 +269,19 @@ class DuckGame:
         self.head_y = 0.5
         self.has_pose = False
 
+        # Menu state
+        self.menu_options = ["START GAME", "QUIT"]
+        self.menu_sel = 0
+        self.pause_options = ["RESUME", "MAIN MENU", "QUIT"]
+        self.pause_sel = 0
+
         # Fixed x-line where the player "exists"
         self.player_x = int(self.cfg.WINDOW_WIDTH * self.cfg.PLAYER_X_FRAC)
 
         self.fx = Effects()
         self._fps_q: deque = deque(maxlen=30)
         self._t = time.time()
+        self.running = True
 
     # ------------------------------------------------------------------
     # MAIN LOOP
@@ -285,7 +294,7 @@ class DuckGame:
         logger.info("Duck & Dodge — press 'q' to quit")
 
         try:
-            while self._cam.is_opened:
+            while self._cam.is_opened and self.running:
                 ok, frame = self._cam.read()
                 if not ok:
                     break
@@ -305,6 +314,8 @@ class DuckGame:
                     self._menu(c)
                 elif self.state == State.PLAYING:
                     self._play(c)
+                elif self.state == State.PAUSED:
+                    self._pause_menu(c)
                 elif self.state == State.GAME_OVER:
                     self._gameover(c)
 
@@ -314,14 +325,9 @@ class DuckGame:
 
                 cv2.imshow(cfg.WINDOW_TITLE, c)
 
-                key = cv2.waitKey(1) & 0xFF
-                if key == ord("q"):
-                    break
-                elif key in (ord(" "), 13):
-                    if self.state == State.MENU:
-                        self._start()
-                    elif self.state == State.GAME_OVER:
-                        self.state = State.MENU
+                key = cv2.waitKeyEx(1)
+                if key != -1:
+                    self._handle_input(key)
         finally:
             self._cam.release()
             cv2.destroyAllWindows()
@@ -502,6 +508,25 @@ class DuckGame:
     # MENU
     # ------------------------------------------------------------------
 
+    def _draw_button(self, canvas, text, cx, cy, selected, width=300, height=60):
+        # Professional look
+        bg_color = (80, 180, 60) if selected else (40, 40, 50)
+        border_color = (120, 255, 100) if selected else (80, 80, 100)
+        text_color = (255, 255, 255) if selected else (180, 180, 180)
+        thick = 2 if selected else 1
+        
+        # Transparent background
+        overlay = canvas.copy()
+        cv2.rectangle(overlay, (cx - width//2, cy - height//2), (cx + width//2, cy + height//2), bg_color, -1)
+        alpha = 0.8 if selected else 0.6
+        cv2.addWeighted(overlay, alpha, canvas, 1 - alpha, 0, canvas)
+        
+        # Border
+        cv2.rectangle(canvas, (cx - width//2, cy - height//2), (cx + width//2, cy + height//2), border_color, thick, cv2.LINE_AA)
+        
+        # Text
+        _ctext(canvas, text, cx, cy - 5, 0.8, text_color, 2 if selected else 1)
+
     def _menu(self, canvas):
         cfg = self.cfg
         cx, cy = cfg.WINDOW_WIDTH // 2, cfg.WINDOW_HEIGHT // 2
@@ -512,21 +537,99 @@ class DuckGame:
             self._draw_head(canvas, hx, hy, cfg.HEAD_NORMAL)
 
         # Title
-        _ctext(canvas, "DUCK & DODGE", cx, cy - 100, 2.2, (255, 255, 255), 4)
-        _ctext(canvas, "Duck under the spikes to survive!", cx, cy - 30, 0.7, (160, 160, 160), 1)
+        _ctext(canvas, "DUCK & DODGE", cx, cy - 180, 2.5, (255, 255, 255), 5)
+        _ctext(canvas, "Duck under the spikes to survive!", cx, cy - 100, 0.8, (180, 180, 180), 2)
 
         # Pose status
         if self.has_pose:
-            _ctext(canvas, "Pose detected — you're ready!", cx, cy + 30, 0.6, (0, 255, 100), 1)
+            _ctext(canvas, "Pose detected — you're ready!", cx, cy - 40, 0.6, (0, 255, 100), 1)
         else:
-            _ctext(canvas, "Step into the camera view...", cx, cy + 30, 0.6, (0, 120, 255), 1)
+            _ctext(canvas, "Step into the camera view...", cx, cy - 40, 0.6, (0, 120, 255), 1)
 
-        # Blink prompt
-        if int(time.time() * 2) % 2 == 0:
-            _ctext(canvas, "Press SPACE to start", cx, cy + 100, 0.9, (200, 200, 200), 2)
+        # Buttons
+        for i, opt in enumerate(self.menu_options):
+            b_cy = cy + 40 + i * 80
+            self._draw_button(canvas, opt, cx, b_cy, i == self.menu_sel)
+
+        _ctext(canvas, "Use W/S or UP/DOWN to navigate, SPACE to select", cx, cy + 220, 0.5, (100, 100, 100), 1)
 
         if self.high_score > 0:
-            _ctext(canvas, f"Best: {self.high_score}", cx, cy + 160, 0.7, (100, 200, 255), 2)
+            _ctext(canvas, f"High Score: {self.high_score}", cx, cy + 280, 0.8, (100, 200, 255), 2)
+
+    def _pause_menu(self, canvas):
+        cfg = self.cfg
+        cx, cy = cfg.WINDOW_WIDTH // 2, cfg.WINDOW_HEIGHT // 2
+
+        # Draw game background static elements
+        self._draw_grid(canvas)
+        cv2.line(canvas, (self.player_x, 0), (self.player_x, cfg.WINDOW_HEIGHT), (30, 30, 35), 1, cv2.LINE_AA)
+        hx, hy = self._head_px()
+        for s in self.spikes:
+            self._draw_spike_pair(canvas, s, hx)
+        
+        if self.has_pose and self._landmarks:
+            self._draw_skel(canvas, 0.2)
+
+        self._draw_head(canvas, hx, hy, cfg.HEAD_SAFE)
+        self._draw_hud(canvas)
+
+        # Dim overlay for the pause menu
+        ov = np.zeros_like(canvas)
+        cv2.addWeighted(ov, 0.6, canvas, 0.4, 0, canvas)
+
+        # Panel background
+        panel_w, panel_h = 450, 450
+        cv2.rectangle(ov, (cx - panel_w//2, cy - panel_h//2), (cx + panel_w//2, cy + panel_h//2), (20, 20, 25), -1)
+        cv2.addWeighted(ov, 0.9, canvas, 0.1, 0, canvas)
+        cv2.rectangle(canvas, (cx - panel_w//2, cy - panel_h//2), (cx + panel_w//2, cy + panel_h//2), (100, 150, 200), 2, cv2.LINE_AA)
+
+        _ctext(canvas, "PAUSED", cx, cy - 140, 1.8, (255, 255, 255), 3)
+
+        for i, opt in enumerate(self.pause_options):
+            b_cy = cy - 20 + i * 80
+            self._draw_button(canvas, opt, cx, b_cy, i == self.pause_sel, width=280)
+            
+        _ctext(canvas, "W/S to navigate, SPACE to select", cx, cy + 180, 0.5, (150, 150, 150), 1)
+
+    def _handle_input(self, key):
+        if key == ord("q"):
+            self.running = False
+            return
+            
+        if self.state == State.MENU:
+            if key in (ord("w"), ord("W"), 2490368, 82): # Up
+                self.menu_sel = (self.menu_sel - 1) % len(self.menu_options)
+            elif key in (ord("s"), ord("S"), 2621440, 84): # Down
+                self.menu_sel = (self.menu_sel + 1) % len(self.menu_options)
+            elif key in (ord(" "), 13):
+                if self.menu_sel == 0:
+                    self._start()
+                elif self.menu_sel == 1:
+                    self.running = False
+                    
+        elif self.state == State.PLAYING:
+            if key in (27, ord("p"), ord("P")): # Esc or P
+                self.state = State.PAUSED
+                self.pause_sel = 0
+                
+        elif self.state == State.PAUSED:
+            if key in (27, ord("p"), ord("P")):
+                self.state = State.PLAYING
+            elif key in (ord("w"), ord("W"), 2490368, 82):
+                self.pause_sel = (self.pause_sel - 1) % len(self.pause_options)
+            elif key in (ord("s"), ord("S"), 2621440, 84):
+                self.pause_sel = (self.pause_sel + 1) % len(self.pause_options)
+            elif key in (ord(" "), 13):
+                if self.pause_sel == 0:
+                    self.state = State.PLAYING
+                elif self.pause_sel == 1:
+                    self.state = State.MENU
+                elif self.pause_sel == 2:
+                    self.running = False
+                    
+        elif self.state == State.GAME_OVER:
+            if key in (ord(" "), 13):
+                self.state = State.MENU
 
     # ------------------------------------------------------------------
     # START GAME
